@@ -36,5 +36,13 @@ module.exports = mongoose.model('Party', {
 	address: {
 	    type: String,
 	    default: ''
+	},
+	organization: {
+	    type: String,
+	    default: ''
+	},
+	relation: {
+	    type: String,
+	    default: ''
 	}
 });

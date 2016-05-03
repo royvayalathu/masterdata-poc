@@ -1,19 +1,23 @@
 var mongoose = require('mongoose');
 
 module.exports = mongoose.model('Product', {
-    party: {
+    id: {
         type: String,
         default: ''
     },
-	offerStatus: {
+	description: {
 	    type: String,
 	    default: ''
 	},
-	covers: {
+	keywords: {
 	    type: String,
 	    default: ''
 	},
-	id: {
+	product: {
+	    type: String,
+	    default: ''
+	},
+	customer: {
 	    type: String,
 	    default: ''
 	}
