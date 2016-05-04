@@ -6,6 +6,8 @@ var port = process.env.PORT || 8080; 				// set the port
 var database = require('./config/database'); 			// load the database config
 var morgan = require('morgan');
 var bodyParser = require('body-parser');
+var faker = require('faker/locale/de_CH');
+
 /*
 var methodOverride = require('method-override');
 */
@@ -24,6 +26,11 @@ app.use(bodyParser.json({type: 'application/vnd.api+json'})); // parse applicati
 app.use(methodOverride('X-HTTP-Method-Override')); // override with the X-HTTP-Method-Override header in the request
 */
 
+var randomName = faker.name.findName(); // Rowan Nikolaus
+var randomEmail = faker.internet.email(); // Kassandra.Haley@erich.biz
+var randomCard = faker.helpers.createCard(); // random contact card containing many properties
+
+console.log(faker.fake("{{name.lastName}}, {{name.firstName}} {{name.suffix}}"));
 
 // routes ======================================================================
 require('./app/routes.js')(app);
