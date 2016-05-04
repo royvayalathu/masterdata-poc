@@ -43,13 +43,13 @@
 
 				<div class="radio">
 					<label>
-						<input type="radio" ng-click="deleteTodo(todo._id)"> Beginnen als Kunde
+						<input type="radio"> Beginnen als Kunde
 					</label>
 				</div>
 
 				<div class="radio">
 					<label>
-						<input type="radio" ng-click="deleteTodo(todo._id)"> Beginnen als Aussendienst
+						<input type="radio"> Beginnen als Aussendienst
 					</label>
 				</div>
 
@@ -65,41 +65,5 @@
 		</div>
 
 		<br/>
-		
-		<br/>
-		<div id="todo-list" class="row">
-			<div class="col-sm-4 col-sm-offset-4">
-				<div class="radio">
-					<label>
-						Messages from DB:
-					</label>
-				</div>
-				<div class="checkbox" ng-repeat="todo in todos">
-					<label>
-						<input type="checkbox" ng-click="deleteTodo(todo._id)"> {{ todo.text }}
-					</label>
-				</div>
-
-				<p class="text-center" ng-show="loading">
-					<span class="fa fa-spinner fa-spin fa-3x"></span>
-				</p>
-
-			</div>
-		</div>
-
-		<div id="todo-form" class="row">
-			<div class="col-sm-8 col-sm-offset-2 text-center">
-				<form>
-					<div class="form-group">
-
-						<input type="text" class="form-control input-lg text-center" placeholder="Store a message in DB" ng-model="formData.text">
-					</div>
-
-					<button type="submit" class="btn btn-primary btn-lg" ng-click="createTodo()">Add</button>
-				</form>
-			</div>
-		</div>
-	</div>
- 
 </body>
 </html>
