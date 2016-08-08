@@ -1,64 +1,47 @@
-<!doctype html>
-
-<!-- ASSIGN OUR ANGULAR MODULE -->
-<html ng-app="scotchTodo">
+<html>
 <head>
-	<!-- META -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1"><!-- Optimize mobile viewport -->
-
-	<title>Master Data PoC</title>
-
-	<!-- SCROLLS -->
-	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"><!-- load bootstrap -->
-	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
-	<style>
-		html 					{ overflow-y:scroll; }
-		body 					{ padding-top:50px; }
-		#todo-list 				{ margin-bottom:30px; }
-		#todo-form 	 			{ margin-bottom:50px; }
-	</style>
-
-	<!-- SPELLS -->
-	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script><!-- load angular -->
-
-	<script src="js/controllers/main.js"></script> <!-- load up our controller -->
-	<script src="js/services/todos.js"></script> <!-- load our todo service -->
-	<script src="js/core.js"></script> <!-- load our main application -->
-
 </head>
-<!-- SET THE CONTROLLER -->
-<body ng-controller="mainController">
-	<div class="container">
+<body>
 
-		<!-- HEADER AND TODO COUNT -->
-		<div class="jumbotron text-center">
-			<h1>Master Data PoC Home Page</h1>
-		</div>
-		<!-- My Start Page -->
-		<div id="todo-list" class="row">
-			<div class="col-sm-4 col-sm-offset-4">
+<!--Begin Comm100 Live Chat Code-->
+<div id="comm100-button-351"></div>
+<script type="text/javascript">
+    var Comm100API = Comm100API || new Object;
+    Comm100API.chat_buttons = Comm100API.chat_buttons || [];
+    var comm100_chatButton = new Object;
+    comm100_chatButton.code_plan = 351;
+    comm100_chatButton.div_id = 'comm100-button-351';
+    Comm100API.chat_buttons.push(comm100_chatButton);
+    Comm100API.site_id = 219812;
+    Comm100API.main_code_plan = 351;
 
-				<div class="radio">
-					<label>
-						<input type="radio"> Beginnen als Kunde
-					</label>
-				</div>
+    var comm100_lc = document.createElement('script');
+    comm100_lc.type = 'text/javascript';
+    comm100_lc.async = true;
+    comm100_lc.src = 'https://chatserver.comm100.com/livechat.ashx?siteId=' + Comm100API.site_id;
+    var comm100_s = document.getElementsByTagName('script')[0];
+    comm100_s.parentNode.insertBefore(comm100_lc, comm100_s);
 
-				<div class="radio">
-					<label>
-						<input type="radio"> Beginnen als Aussendienst
-					</label>
-				</div>
-				<div class="radio">
-					<label>
-						<input type="radio"> Beginnen als Broker
-					</label>
-				</div>
+    setTimeout(function() {
+        if (!Comm100API.loaded) {
+            var lc = document.createElement('script');
+            lc.type = 'text/javascript';
+            lc.async = true;
+            lc.src = 'https://hostedmax.comm100.com/chatserver/livechat.ashx?siteId=' + Comm100API.site_id;
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(lc, s);
+        }
+    }, 5000)
+</script>
+<!--End Comm100 Live Chat Code-->
 
-			</div>
-		</div>
 
-		<br/>
+<!-- Your page code here -->
+<div>
+<iframe id="siteContent" src="https://beta.axa.ch" width="100%" height="100%" frameBorder="0">
+</iframe>
+</div>
+<!-- End Your page code here -->
+
 </body>
 </html>
